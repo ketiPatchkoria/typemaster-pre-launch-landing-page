@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    background-color: #F2F2F2;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7B8BAD;
+    
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 375px;
+    max-width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+}
+
+.aside {
+    display:none;
+}
+
+
+.header,
+.section-1,
+.section-2,
+.section-3 {
+    width:327px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    height:48px;
+    margin-top:23px;
+}
+
+.header div {
+    width: 40px;
+    height: 40px;
+    background-color: #F16718;
+    color: #FFFFFF;
+}
+
+.header button {
+    width: 150px;
+    border-radius: 8px;
+    border:none;
+    text-align: center;
+    background-color: #E8EFF2;
+    color:#162542;
+    font-weight: 700;
+    text-transform: uppercase;
+   
+}
+
+.header button:hover {
+    cursor: pointer;
+    background-color: #162542;
+    color: #FFFFFF;
+}
+
+.section-1 {
+   margin-top:64px;
+}
+
+.keyboard-typemaster {
+    width: 327px;
+    height: 286px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.keyboard-typemaster h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    color: #162542;
+    text-transform: uppercase;
+}
+
+
+.release {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.release button {
+    width:150px;
+    height:48px;
+    background: #F16718;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border:none;
+}
+
+.release button:hover {
+    cursor: pointer;
+    background-color: #FF9B62;
+}
+
+.mobile-keyboard {
+    width:372px;
+    height:331px;
+    border-radius:12px;
+    margin-top:50px;
+}
+
+.tablet-keyboard,
+.desktop-keyboard {
+    display:none;
+}
+
+.section-2 {
+    margin-top:25px;
+}
+.images {
+   display:flex;
+   justify-content: space-between;
+}
+.tablet-phone,
+.tablet-glass,
+.desktop-phone,
+.desktop-glass {
+    display: none;
+}
+
+.phone-div {
+    width: 110px;
+    height:193px;
+    background-color: rgb(189, 91, 11);
+    border-radius: 10px;
+    margin-left:-45px;
+}
+.mobile-phone {
+    width: inherit;
+    height:inherit;
+    border-radius: 10px;
+    mix-blend-mode: multiply;
+}
+
+.mobile-glass {
+    width:210px;
+    height:193px;
+    border-radius:15px;   
+}
+
+
+.keyboard-mechanical {
+    text-align: center;
+    margin-top:60px;
+}
+
+.keyboard-mechanical h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #162542;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.keyboard-mechanical p {
+    margin-top: 24px;
+}
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:45px;
+}
+.standart-div {
+    width:327px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:64px;
+    text-align: center;
+}
+.icon-div {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    background-color: #F16718;
+    text-align: center;  
+} 
+.icon-img {
+    margin-top:50%;
+    transform: translateY(-50%);
+}
+.icon-compatible {
+    width:25px;
+    height:16px;
+    
+}
+.icon-bluetooth {
+    width: 15px;
+    height: 20px;
+}
+.icon-battery {
+    width: 28px;
+    height: 20px;
+}
+.icon-light {
+    width: 25px;
+    height: 22px;
+}
+
+.standart-div h3 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #162542;
+    margin-top:48px;
+}
+.standart-div p {
+    color: #7B8BAD;
+    text-align: center;
+    margin-top:24px;
+}
+
+.footer {
+    width:272px;
+    height:26px;
+    color: #7B8BAD;
+    margin-top: 96px;
+    margin-bottom: 50px;
+    
+}
+
+.footer :first-child {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 800px){
+    .container {
+        width:768px;
+    }
+    .header,
+    .section-1,
+    .section-2,
+    .section-3 {
+        width:689px;
+    }
+
+    .header {
+        height:58px;
+    }
+    .header button {
+        width: 175px;
+    }
+
+    .section-1 {
+        height:425px;
+        display:flex;
+        position: relative;
+
+    }
+
+    .mobile-keyboard,
+    .desktop-keyboard {
+        display:none;
+    }
+
+    .tablet-keyboard {
+        display:block;
+        width: 400px;
+        height:425px;
+        border-radius:12px;
+        margin-left: 60%;
+        position:absolute;
+    }
+
+    .keyboard-typemaster {
+        width: 339px;
+        height:auto;
+        justify-content: space-around;
+    }
+
+    .release button {
+        width: 175px;
+        height: 58px;
+    }
+
+    .images {
+
+    }
+    .mobile-phone,
+    .mobile-glass,
+    .desktop-phone,
+    .desktop-glass {
+        display: none;
+    }
+
+    .phone-div {
+        width: 214px;
+        height:320px;
+    }
+    .tablet-phone {
+        width:inherit;
+        height:inherit;
+        display:block;
+        border-radius: 10px;
+        mix-blend-mode: multiply;
+    }
+    .tablet-glass {
+        display:block;
+        width: 445px;
+        height:320px;
+        border-radius: 10px;
+    }
+
+    .keyboard-mechanical {
+        display:flex;
+        text-align: left;
+    }
+    .keyboard-mechanical h2 {
+        width:255px;
+        height:108px;
+        text-align: left;
+    }
+    .keyboard-mechanical p {
+        width: 398px;
+        height:78px;
+    }
+
+    .section-3 {
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns:1fr 1fr;
+        column-gap: 69px;
+        row-gap: 72px;
+    }
+    .standart-div {
+        text-align: left;
+        align-items: flex-start;
+    }
+    .standart-div p {
+        width: 290px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1395px) {
+    body {
+        background-color: #FFFFFF;
+    }
+    .container {
+        width: 1110px;
+        position:relative;
+    }
+
+    .header,
+    .section-1,
+    .section-2,
+    .section-3 {
+        width: inherit;
+    }
+
+    .header {
+        margin-top:55px;
+    }
+
+    .section-1 {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        position:initial;
+        height:480px;
+        margin-top:48px;
+    }
+
+    .keyboard-typemaster {
+        width: 445px;
+        height: 312px;
+    }
+    .tablet-keyboard,
+    .mobile-keyboard {
+        display:none;
+    }
+    .desktop-keyboard {
+        display:block;
+        width: 540px;
+        height: 480px;
+        border-radius: 15px;
+    }
+
+    .section-2 {
+        display: flex;
+        height:480px;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:24px;
+    }
+
+    .images {
+        width: 750px;
+    }
+
+    .mobile-phone,
+    .mobile-glass,
+    .tablet-phone,
+    .tablet-glass {
+        display: none;
+    }
+
+    .phone-div {
+        width:255px;
+        height:480px;
+    }
+    .desktop-phone {
+        display:block;
+        border-radius: 10px;
+        width:inherit;
+        height:inherit;
+        mix-blend-mode: multiply;
+    }
+
+    .desktop-glass {
+        display:block;
+        border-radius: 10px;
+        width:445px;
+        height:480px;
+    }
+
+    .keyboard-mechanical {
+        flex-direction: column;
+        width: 255px;
+        height: 265px;
+        margin-top:0;
+    }
+
+    .keyboard-mechanical h2 {
+        width:inherit;
+        height:inherit;
+    }
+    .keyboard-mechanical p {
+        width:inherit;
+        height:inherit;
+        margin-top:0;
+    }
+
+    .section-3 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: none;
+        column-gap: 30px;
+        margin-top:131px;
+    }
+
+    .standart-div {
+        width: 255px;
+        height:323px;
+        margin-top:0;
+        
+    }
+    .icon
+
+    .standart-div h2 {
+        width: inherit;
+    }
+
+    .standart-div p{
+        width:inherit;
+    }
+
+    .footer {
+        margin-top:128px;
+        margin-bottom: 39px;
+    }
+
+     .aside {
+        display:block;
+        position: absolute;
+        width:255px;
+        height:240px;
+        border-radius: 15px;
+        background-color: #E8EFF2;
+    }
+    .right {
+        margin-top:161px;
+        right:-145px;
+
+    } 
+
+    .left {
+        top:905px;
+        left:-145px;
+
+    } 
+}
